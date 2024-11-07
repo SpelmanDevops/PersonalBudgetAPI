@@ -1,0 +1,133 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6B73FF, #000DFF);
+    color: #333;
+}
+
+h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Container for Sections */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Card Style */
+.card {
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Form Styling */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="number"]::placeholder {
+    color: #bbb;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #333;
+}
+
+button:focus {
+    outline: none;
+}
+
+.logout-btn {
+    background-color: #FF5733;
+    margin-top: 10px;
+}
+
+.logout-btn:hover {
+    background-color: #e04b2f;
+}
+
+.add-transaction {
+    background-color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Transaction List */
+.transaction-list {
+    margin-top: 15px;
+}
+
+.transaction-list div {
+    padding: 12px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction-list div.expense {
+    border-left-color: #FF5733;
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.radio-group input[type="radio"] {
+    margin: 0;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+/* Button Hover Effects */
+.add-transaction:hover {
+    background-color: #45a049;
+}
